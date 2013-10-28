@@ -11,7 +11,7 @@
 
 @interface Vehicle : Transport
 
-@property (strong, nonatomic) NSNumber* Price;
+@property (strong, nonatomic) NSNumber* price;
 
 +(Vehicle*)vehicleWithName: (NSString*)name AndPrice:(NSNumber*) price;
 
