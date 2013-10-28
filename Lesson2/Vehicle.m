@@ -10,6 +10,7 @@
 
 @implementation Vehicle
 
+<<<<<<< HEAD
 -(Vehicle*) vehicleWithName:(NSString *)name AndPrice:(NSNumber *)price
 {
     Vehicle* newVehicle = [[Vehicle alloc] init];
@@ -17,6 +18,14 @@
     newVehicle.Name = name;
     newVehicle.Price = price;
     
+=======
++(Vehicle*) vehicleWithName:(NSString *)name AndPrice:(NSNumber *)price
+{
+    Vehicle* newVehicle = [[Vehicle alloc] init];
+    newVehicle.Name = name;
+    newVehicle.Price = price;
+    
+>>>>>>> d723b1852fbb3d7bc80bb7e51f1341ed7290b61d
     return newVehicle;
 }
 
