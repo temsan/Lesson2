@@ -12,7 +12,7 @@
 
 +(Vehicle*) vehicleWithName:(NSString *)name AndPrice:(NSNumber *)price
 {
-    Vehicle* newVehicle = [Vehicle alloc];
+    Vehicle* newVehicle = [[Vehicle alloc] init];
     newVehicle.Name = name;
     newVehicle.Price = price;
     
