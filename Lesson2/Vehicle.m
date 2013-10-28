@@ -10,12 +10,13 @@
 
 @implementation Vehicle
 
-+(id) InitWithName:(NSString *)name AndPrice:(NSNumber *)price
+-(Vehicle*) InitWithName:(NSString *)name AndPrice:(NSNumber *)price
 {
-    this.Name = name;
-    this.Price = price;
+    Vehicle* newVehicle = [Vehicle alloc];
+    newVehicle.Name = name;
+    newVehicle.Price = price;
     
-    return this;
+    return newVehicle;
 }
 
 @end
