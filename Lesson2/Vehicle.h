@@ -13,6 +13,6 @@
 
 @property (strong, nonatomic) NSNumber* Price;
 
--(id)InitWithName: (NSString*)name AndPrice:(NSNumber*) price;
++(id)InitWithName: (NSString*)name AndPrice:(NSNumber*) price;
 
 @end
