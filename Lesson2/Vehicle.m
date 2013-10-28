@@ -13,6 +13,10 @@
 +(id) InitWithName:(NSString *)name AndPrice:(NSNumber *)price
 {
     Vehicle* vehicle = [[super alloc] init];
+    
+    vehicle.Name = name;
+    vehicle.Price = price;
+    
     return vehicle;
 }
 
