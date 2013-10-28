@@ -13,6 +13,6 @@
 
 @property (strong, nonatomic) NSNumber* Price;
 
--(Vehicle*)InitWithName: (NSString*)name AndPrice:(NSNumber*) price;
++(Vehicle*)InitWithName: (NSString*)name AndPrice:(NSNumber*) price;
 
 @end
