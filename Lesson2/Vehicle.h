@@ -13,10 +13,6 @@
 
 @property (strong, nonatomic) NSNumber* price;
 
-<<<<<<< HEAD
--(Vehicle*)vehicleWithName: (NSString*)name AndPrice:(NSNumber*) price;
-=======
-+(Vehicle*)vehicleWithName: (NSString*)name AndPrice:(NSNumber*) price;
->>>>>>> d723b1852fbb3d7bc80bb7e51f1341ed7290b61d
++ (Vehicle*) vehicleWithName: (NSString*)name AndPrice:(NSNumber*) price;
 
 @end

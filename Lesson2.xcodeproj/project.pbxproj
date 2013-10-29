@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03D0C4218203CCF006FF1F6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03D0C4118203CCF006FF1F6 /* Storyboard.storyboard */; };
+		B03D0C9118205D0A006FF1F6 /* mainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03D0C8E18205D0A006FF1F6 /* mainTableViewController.m */; };
+		B03D0C9218205D0A006FF1F6 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B03D0C9018205D0A006FF1F6 /* MyCell.m */; };
 		B0B8B2A3181DA46200942809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8B2A2181DA46200942809 /* Foundation.framework */; };
 		B0B8B2A5181DA46200942809 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8B2A4181DA46200942809 /* CoreGraphics.framework */; };
 		B0B8B2A7181DA46200942809 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8B2A6181DA46200942809 /* UIKit.framework */; };
 		B0B8B2AD181DA46200942809 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B2AB181DA46200942809 /* InfoPlist.strings */; };
 		B0B8B2AF181DA46200942809 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2AE181DA46200942809 /* main.m */; };
 		B0B8B2B3181DA46200942809 /* tmsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2B2181DA46200942809 /* tmsAppDelegate.m */; };
-		B0B8B2BC181DA46200942809 /* tmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2BB181DA46200942809 /* tmsViewController.m */; };
 		B0B8B2BE181DA46200942809 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B2BD181DA46200942809 /* Images.xcassets */; };
 		B0B8B2C5181DA46200942809 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8B2C4181DA46200942809 /* XCTest.framework */; };
 		B0B8B2C6181DA46200942809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8B2A2181DA46200942809 /* Foundation.framework */; };
@@ -22,7 +24,6 @@
 		B0B8B2D1181DA46200942809 /* Lesson2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2D0181DA46200942809 /* Lesson2Tests.m */; };
 		B0B8B2DC181DA57A00942809 /* Transport.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2DB181DA57A00942809 /* Transport.m */; };
 		B0B8B2DF181DA6B000942809 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2DE181DA6B000942809 /* Vehicle.m */; };
-		B0B8B2E1181DA7DB00942809 /* mainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B2E0181DA7DB00942809 /* mainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B03D0C4118203CCF006FF1F6 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		B03D0C8D18205CE7006FF1F6 /* mainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mainTableViewController.h; path = UI/mainTableViewController.h; sourceTree = "<group>"; };
+		B03D0C8E18205D0A006FF1F6 /* mainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mainTableViewController.m; path = UI/mainTableViewController.m; sourceTree = "<group>"; };
+		B03D0C8F18205D0A006FF1F6 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCell.h; path = UI/MyCell.h; sourceTree = "<group>"; };
+		B03D0C9018205D0A006FF1F6 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCell.m; path = UI/MyCell.m; sourceTree = "<group>"; };
 		B0B8B29F181DA46200942809 /* Lesson2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B8B2A2181DA46200942809 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B0B8B2A4181DA46200942809 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,8 +52,6 @@
 		B0B8B2B0181DA46200942809 /* Lesson2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lesson2-Prefix.pch"; sourceTree = "<group>"; };
 		B0B8B2B1181DA46200942809 /* tmsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmsAppDelegate.h; sourceTree = "<group>"; };
 		B0B8B2B2181DA46200942809 /* tmsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmsAppDelegate.m; sourceTree = "<group>"; };
-		B0B8B2BA181DA46200942809 /* tmsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmsViewController.h; sourceTree = "<group>"; };
-		B0B8B2BB181DA46200942809 /* tmsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmsViewController.m; sourceTree = "<group>"; };
 		B0B8B2BD181DA46200942809 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0B8B2C3181DA46200942809 /* Lesson2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B8B2C4181DA46200942809 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,7 +62,6 @@
 		B0B8B2DB181DA57A00942809 /* Transport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transport.m; sourceTree = "<group>"; };
 		B0B8B2DD181DA6B000942809 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		B0B8B2DE181DA6B000942809 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
-		B0B8B2E0181DA7DB00942809 /* mainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +91,9 @@
 		B0B8B296181DA46200942809 = {
 			isa = PBXGroup;
 			children = (
+				B0B8B2A1181DA46200942809 /* Frameworks */,
 				B0B8B2A8181DA46200942809 /* Lesson2 */,
 				B0B8B2CA181DA46200942809 /* Lesson2Tests */,
-				B0B8B2A1181DA46200942809 /* Frameworks */,
 				B0B8B2A0181DA46200942809 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,13 +121,15 @@
 		B0B8B2A8181DA46200942809 /* Lesson2 */ = {
 			isa = PBXGroup;
 			children = (
-				B0B8B2BD181DA46200942809 /* Images.xcassets */,
-				B0B8B2E0181DA7DB00942809 /* mainView.xib */,
 				B0B8B2A9181DA46200942809 /* Supporting Files */,
 				B0B8B2B1181DA46200942809 /* tmsAppDelegate.h */,
 				B0B8B2B2181DA46200942809 /* tmsAppDelegate.m */,
-				B0B8B2BA181DA46200942809 /* tmsViewController.h */,
-				B0B8B2BB181DA46200942809 /* tmsViewController.m */,
+				B03D0C4118203CCF006FF1F6 /* Storyboard.storyboard */,
+				B0B8B2BD181DA46200942809 /* Images.xcassets */,
+				B03D0C8D18205CE7006FF1F6 /* mainTableViewController.h */,
+				B03D0C8E18205D0A006FF1F6 /* mainTableViewController.m */,
+				B03D0C8F18205D0A006FF1F6 /* MyCell.h */,
+				B03D0C9018205D0A006FF1F6 /* MyCell.m */,
 				B0B8B2DA181DA57A00942809 /* Transport.h */,
 				B0B8B2DB181DA57A00942809 /* Transport.m */,
 				B0B8B2DD181DA6B000942809 /* Vehicle.h */,
@@ -240,8 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B8B2BE181DA46200942809 /* Images.xcassets in Resources */,
-				B0B8B2E1181DA7DB00942809 /* mainView.xib in Resources */,
 				B0B8B2AD181DA46200942809 /* InfoPlist.strings in Resources */,
+				B03D0C4218203CCF006FF1F6 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B8B2AF181DA46200942809 /* main.m in Sources */,
-				B0B8B2BC181DA46200942809 /* tmsViewController.m in Sources */,
 				B0B8B2B3181DA46200942809 /* tmsAppDelegate.m in Sources */,
 				B0B8B2DC181DA57A00942809 /* Transport.m in Sources */,
 				B0B8B2DF181DA6B000942809 /* Vehicle.m in Sources */,
+				B03D0C9118205D0A006FF1F6 /* mainTableViewController.m in Sources */,
+				B03D0C9218205D0A006FF1F6 /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
