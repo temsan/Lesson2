@@ -24,6 +24,9 @@
 		B0B8B2D1181DA46200942809 /* Lesson2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2D0181DA46200942809 /* Lesson2Tests.m */; };
 		B0B8B2DC181DA57A00942809 /* Transport.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2DB181DA57A00942809 /* Transport.m */; };
 		B0B8B2DF181DA6B000942809 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B2DE181DA6B000942809 /* Vehicle.m */; };
+		B0BFA7E218268FCD00FF29FE /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BFA7E118268FCD00FF29FE /* JASidePanelController.m */; };
+		B0BFA7E41826903000FF29FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0BFA7E31826903000FF29FE /* QuartzCore.framework */; };
+		B0BFA7EB182690C000FF29FE /* MySidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BFA7EA182690C000FF29FE /* MySidePanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,11 @@
 		B0B8B2DB181DA57A00942809 /* Transport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transport.m; sourceTree = "<group>"; };
 		B0B8B2DD181DA6B000942809 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		B0B8B2DE181DA6B000942809 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		B0BFA7E018268FCD00FF29FE /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JASidePanelController.h; path = "../../../../Downloads/JASidePanels-master/JASidePanels/Source/JASidePanelController.h"; sourceTree = "<group>"; };
+		B0BFA7E118268FCD00FF29FE /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JASidePanelController.m; path = "../../../../Downloads/JASidePanels-master/JASidePanels/Source/JASidePanelController.m"; sourceTree = "<group>"; };
+		B0BFA7E31826903000FF29FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B0BFA7E9182690C000FF29FE /* MySidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySidePanel.h; sourceTree = "<group>"; };
+		B0BFA7EA182690C000FF29FE /* MySidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySidePanel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BFA7E41826903000FF29FE /* QuartzCore.framework in Frameworks */,
 				B0B8B2A5181DA46200942809 /* CoreGraphics.framework in Frameworks */,
 				B0B8B2A7181DA46200942809 /* UIKit.framework in Frameworks */,
 				B0B8B2A3181DA46200942809 /* Foundation.framework in Frameworks */,
@@ -110,6 +119,7 @@
 		B0B8B2A1181DA46200942809 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0BFA7E31826903000FF29FE /* QuartzCore.framework */,
 				B0B8B2A2181DA46200942809 /* Foundation.framework */,
 				B0B8B2A4181DA46200942809 /* CoreGraphics.framework */,
 				B0B8B2A6181DA46200942809 /* UIKit.framework */,
@@ -126,8 +136,11 @@
 				B0B8B2B2181DA46200942809 /* tmsAppDelegate.m */,
 				B03D0C4118203CCF006FF1F6 /* Storyboard.storyboard */,
 				B0B8B2BD181DA46200942809 /* Images.xcassets */,
+				B0BFA7E51826904200FF29FE /* SidePanel */,
 				B03D0C8D18205CE7006FF1F6 /* mainTableViewController.h */,
 				B03D0C8E18205D0A006FF1F6 /* mainTableViewController.m */,
+				B0BFA7E9182690C000FF29FE /* MySidePanel.h */,
+				B0BFA7EA182690C000FF29FE /* MySidePanel.m */,
 				B03D0C8F18205D0A006FF1F6 /* MyCell.h */,
 				B03D0C9018205D0A006FF1F6 /* MyCell.m */,
 				B0B8B2DA181DA57A00942809 /* Transport.h */,
@@ -165,6 +178,15 @@
 				B0B8B2CD181DA46200942809 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0BFA7E51826904200FF29FE /* SidePanel */ = {
+			isa = PBXGroup;
+			children = (
+				B0BFA7E018268FCD00FF29FE /* JASidePanelController.h */,
+				B0BFA7E118268FCD00FF29FE /* JASidePanelController.m */,
+			);
+			name = SidePanel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +290,10 @@
 				B0B8B2AF181DA46200942809 /* main.m in Sources */,
 				B0B8B2B3181DA46200942809 /* tmsAppDelegate.m in Sources */,
 				B0B8B2DC181DA57A00942809 /* Transport.m in Sources */,
+				B0BFA7EB182690C000FF29FE /* MySidePanel.m in Sources */,
 				B0B8B2DF181DA6B000942809 /* Vehicle.m in Sources */,
 				B03D0C9118205D0A006FF1F6 /* mainTableViewController.m in Sources */,
+				B0BFA7E218268FCD00FF29FE /* JASidePanelController.m in Sources */,
 				B03D0C9218205D0A006FF1F6 /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +418,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lesson2/Lesson2-Prefix.pch";
 				INFOPLIST_FILE = "Lesson2/Lesson2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,7 +433,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lesson2/Lesson2-Prefix.pch";
 				INFOPLIST_FILE = "Lesson2/Lesson2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
