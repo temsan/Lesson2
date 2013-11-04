@@ -84,17 +84,17 @@
     
     MyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    int index = indexPath.section * 10 + indexPath.row;
+    long index = indexPath.section * 10 + indexPath.row;
     Vehicle *currentObj = [self.marshrutki objectAtIndex: index];
     
     BOOL isMarked = (indexPath.section == 0);
     
     if (isMarked) {
-        cell.starLabel.textColor = [UIColor yellowColor];
+        cell.starImage.image = [UIImage imageNamed:@"star"];
     }
     else
     {
-        cell.starLabel.textColor = [UIColor grayColor];
+        cell.starImage.image = [UIImage imageNamed:@"greyStar"];
     }
     
     cell.nameLabel.text = currentObj.Name;

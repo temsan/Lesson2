@@ -10,7 +10,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="leftViewController" id="gTd-bI-6yx" customClass="mainTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="mainTableViewController" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" id="vV5-QC-E8o">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -21,21 +21,18 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaY-br-bUx" userLabel="starLabel">
-                                            <rect key="frame" x="20" y="0.0" width="17" height="56"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Gah-MM-XAP">
+                                            <rect key="frame" x="11" y="12" width="21" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76X-x8-GPs" userLabel="nameLabel">
-                                            <rect key="frame" x="39" y="11" width="136" height="21"/>
+                                            <rect key="frame" x="34" y="11" width="109" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acp-3b-WPi" userLabel="priceLabel">
-                                            <rect key="frame" x="178" y="11" width="122" height="21"/>
+                                            <rect key="frame" x="140" y="11" width="90" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
@@ -45,7 +42,7 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="76X-x8-GPs" id="qsD-bd-3ta"/>
                                     <outlet property="priceLabel" destination="Acp-3b-WPi" id="Ghv-c1-Yod"/>
-                                    <outlet property="starLabel" destination="AaY-br-bUx" id="9My-vf-IGc"/>
+                                    <outlet property="starImage" destination="Gah-MM-XAP" id="Tcc-wc-dJz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,6 +50,7 @@
                     <navigationItem key="navigationItem" id="yHY-7F-Zap">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="bUy-MB-Zwc"/>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9U9-hD-XSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,6 +119,9 @@
             <point key="canvasLocation" x="180" y="662"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star" width="21" height="21"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

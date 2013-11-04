@@ -10,7 +10,7 @@
 
 @interface MyCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *starLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *starImage;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
