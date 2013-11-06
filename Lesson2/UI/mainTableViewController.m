@@ -6,13 +6,19 @@
 //  Copyright (c) 2013 Артем Бирюков. All rights reserved.
 //
 
+#import "AFNetworking.h"
 #import "mainTableViewController.h"
 #import "MyCell.h"
 #import "Vehicle.h"
 
+#define routesURL @"http://itomy.ch/routes.php"
+
 @interface mainTableViewController ()
 
+@property (strong, nonatomic) NSArray *routes;
+
 @end
+
 
 @implementation mainTableViewController
 
@@ -28,22 +34,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Источник данных для view запихиваем в property контроллера
-    // Здесь получается, нет отдельно модели от контроллера
-    // По идее при загрузке view должно вызываться получение данных от модели
     
-    self.marshrutki = [[NSMutableArray alloc] init];
+    _routes = [[NSArray alloc] init];
+    id route;
     
-    for (int i = 1; i <= 20; i++) {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:routesURL parameters:nil success:
+     ^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        NSString *name = [NSString stringWithFormat:@"Маршрут К-%d", i];
-        NSNumber *price = [NSNumber numberWithLong: random()%40];
+         for (route in responseObject) {
+             _routes = [_routes arrayByAddingObject:[Vehicle vehicleWithName:[route objectForKey:@"route_title"] AndPrice: [route objectForKey:@"route_price"]]];
+             
+         }
         
-        Vehicle *vehicle = [Vehicle vehicleWithName: name AndPrice: price];
-        [self.marshrutki addObject: vehicle];
-        
+         [self.tableView reloadData];
     }
+    failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
     
 }
 
@@ -56,7 +64,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSString* ) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -74,18 +82,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return [self.routes count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *CellIdentifier = @"Cell";
     
     MyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     long index = indexPath.section * 10 + indexPath.row;
-    Vehicle *currentObj = [self.marshrutki objectAtIndex: index];
+    Vehicle *currentObj = [self.routes objectAtIndex: index];
     
     BOOL isMarked = (indexPath.section == 0);
     
@@ -102,7 +111,6 @@
     
     return cell;
 }
-
 
 
 @end

@@ -10,6 +10,4 @@
 
 @interface mainTableViewController : UITableViewController
 
-@property (strong, nonatomic) NSMutableArray *marshrutki;
-
 @end
